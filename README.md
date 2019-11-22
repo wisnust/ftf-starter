@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Compress all file (except _/node_modules_ if exist) to **theme-name.zip** 
+Navigate to **_ftf-starter.zip**
 
 Go to admin dashboard > upload the theme
 
