@@ -33,9 +33,13 @@
 				    <img src="<?php echo esc_url($header_logo['url']); ?>" alt="<?php echo esc_attr($header_logo['alt']); ?>" />
 				<?php endif; ?>
 		    </a>
-		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		        <span class="navbar-toggler-icon"></span>
-		    </button>
+
+		    <button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+			</button>
+
 
 		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		        <ul class="navbar-nav mr-auto">

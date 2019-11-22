@@ -28,3 +28,10 @@ Install **ACF Plugin** and **ACF Option Plugin**
 Then go to admin dashboard
 
 **Custom Fields** > **Sync** > (Check mark) select all > bulk action > **Sync All**
+
+
+
+
+### Customizing Header
+
+Change the navbar toggler: [Hamburgers](https://jonsuh.com/hamburgers/)

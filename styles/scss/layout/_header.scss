@@ -1,5 +1,12 @@
-// =============================================================================
-//
-// Header / Navbar
-//
-// =============================================================================
+.navbar {
+	.navbar-toggler {
+		outline: none !important;
+	}
+	@include media-breakpoint-down(xs) {
+		.navbar-brand {
+			> img {
+				max-width: 200px;
+			}
+		}
+	}
+}
