@@ -2,6 +2,13 @@
 
 ## Getting Started
 
+Compress all file (except _/node_modules_ if exist) to **theme-name.zip** 
+
+Go to admin dashboard > upload the theme
+
+
+### Development
+
 Install Node Modules
 
 ```
@@ -20,4 +27,4 @@ Install **ACF Plugin** and **ACF Option Plugin**
 
 Then go to admin dashboard
 
-**Custom Fields** > **Sync** select all > bulk action > **Sync All**
+**Custom Fields** > **Sync** > (Check mark) select all > bulk action > **Sync All**
