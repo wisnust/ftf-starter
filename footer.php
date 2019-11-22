@@ -14,19 +14,31 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ftf_starter' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ftf_starter' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ftf_starter' ), 'ftf_starter', '<a href="http://underscores.me/">FTF Agency</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="container">
+		    <a class="footer-logo" href="/">
+		    	<?php 
+				$footer_logo = get_field('footer_logo','option');
+				if( !empty( $footer_logo ) ): ?>
+				    <img src="<?php echo esc_url($footer_logo['url']); ?>" width="200" alt="<?php echo esc_attr($footer_logo['alt']); ?>" />
+				<?php endif; ?>
+		    </a>
+
+		    <div class="footer-menu">
+		        <ul>
+		            <?php if( have_rows('footer_menu', 'option') ): ?>
+						<?php while( have_rows('footer_menu', 'option') ): the_row();  ?>
+							<li>
+								<a href="<?php the_sub_field('url') ?>"><?php the_sub_field('text') ?></a>
+							</li>
+						<?php endwhile; ?>
+					<?php endif; ?>
+		        </ul>
+		    </div>
+
+		    <div class="footer-copy">
+		    	<?php the_field('footer_copyright', 'option') ?>
+		    </div>
+	    </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
