@@ -1,0 +1,16 @@
+@include keyframes(hvr-icon-hang) {
+  0% {
+    @include transform(translateX(6px));
+  }
+  50% {
+    @include transform(translateX(2px));
+  }
+  100% {
+    @include transform(translateX(6px));
+  }
+}
+@include keyframes(hvr-icon-hang-sink) {
+  100% {
+    @include transform(translateX(6px));
+  }
+}

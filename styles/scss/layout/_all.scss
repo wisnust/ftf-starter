@@ -1,0 +1,17 @@
+// =============================================================================
+//
+// Global
+//
+// =============================================================================
+
+body {
+	font-family: $Lato;
+	font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}   
+
+a, .btn, .btn-link { 
+	@include transition(color .3s, background-color .3s, border .3s);
+	text-decoration: none !important;
+}

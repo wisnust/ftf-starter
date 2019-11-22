@@ -1,0 +1,1 @@
+$('.test-bb').addClass('compile-test');

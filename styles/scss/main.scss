@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import "vendors/font-awesome";
+
+// Helpers
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/breakpoints";
+@import "helpers/variables";
+
+// Base
+@import "base/animate";
+@import "base/normalize";
+@import "base/typography";
+
+// Layout
+@import "layout/all";
+@import "layout/header";
+@import "layout/footer";
+
+// Components
+@import "components/buttons"; 
+@import "components/heros"; 
+
+// Pages
+@import "pages/index";
